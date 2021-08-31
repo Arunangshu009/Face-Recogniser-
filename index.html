@@ -1,0 +1,30 @@
+<html>
+    <head><title>Face Recognicer app</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <h1>FACE RECOGNISE</h1>
+        <center>
+            <h3 class="btn btn-default heading">IMAGE RECOGNITION</113>
+                <p style="font-size: 22px;">Model is trained to identify the following objects: </p>
+                <b class="name_of_objects">
+                 Arunangshu 
+                 <hr>
+                 Mom
+                 <hr>
+                 Dad
+                <br>
+                <label>Webcam View </label> <div id="canera"></div>
+                <br><br> <div id="result"></div>
+                <button onclick="takeSnapshot();" class="btn btn-info">Capture Image</button>
+                <button onclick="check();" class="btn btn-success">Identify Image</button>
+                <p style="font-size: 22px;">Object: <span id="result_object_name"></span> 
+                </p> <p style="font-size: 22px;">Accuracy <span id="result object_accuracy"></span> </p>
+        </center>
+    </body>
+</html>
